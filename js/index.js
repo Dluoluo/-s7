@@ -1,7 +1,14 @@
 
+    var enddate1 = '2018-5-20 17:00:00';//当前时间
+    enddate1=enddate1.replace(/-/g,':').replace(' ',':');
+enddate1=enddate1.split(':');
+var enddate = new Date(enddate1[0],(enddate1[1]-1),enddate1[2],enddate1[3],enddate1[4],enddate1[5]);
+$(document).ready(function(){
+    //alert(enddate);
+go(enddate)
+})
 // 倒计时
-function daojishi() {
-    var enddate = '2018-5-20 17:00:00';//当前时间
+//function daojishi() {
     function leftTimer(enddate) {
         var leftTime = (new Date(enddate)) - new Date(); //计算剩余的毫秒数
         //var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数
@@ -32,9 +39,9 @@ function daojishi() {
         if (data2 < date1) return;//设置的时间小于现在时间退出
         _ordertimer = setInterval(function () { leftTimer(enddate) }, 1000);
     }
-    go(enddate)
-}
-daojishi()
+    
+//}
+//daojishi()
 //配置/参数切换
 function canshu() {
     var oSelect = document.querySelector('.parameter-select-but'),
