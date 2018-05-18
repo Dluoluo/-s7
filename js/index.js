@@ -5,7 +5,11 @@ enddate1=enddate1.split(':');
 var enddate = new Date(enddate1[0],(enddate1[1]-1),enddate1[2],enddate1[3],enddate1[4],enddate1[5]);
 $(document).ready(function(){
     //alert(enddate);
-go(enddate)
+    go(enddate);
+    $(".home-nav a").on("click",function(){
+        var nav=$(this).attr("data-href");
+        $("html,body").stop().animate({ scrollTop: $(nav).offset().top}, 1000);
+    })
 })
 // 倒计时
 //function daojishi() {
