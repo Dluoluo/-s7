@@ -1,0 +1,316 @@
+body{
+    overflow-x: hidden;
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 0;
+}
+input,button,select{
+  -webkit-appearance:none;
+  border-radius:0;
+}
+.home{
+    height: 1100px;
+    background: url(../img/home-bg.jpg) no-repeat;
+}
+.home-icon{
+    position: relative;
+    height: 151px;
+}
+.home-icon-left{
+    position: absolute;
+    left: 30px;
+}
+.home-icon-right{
+    position: absolute;
+    top: 35px;
+    right: 20px;
+}
+.home-text{
+    display: block;
+    margin: 57px auto 53px;
+}
+.home-time{
+    width: 560px;
+    height: 400px;
+    border: 8px solid black;
+    background: rgba(0, 0, 0, 0.6);
+    margin:0 auto 20px;
+}
+.home-time-text{
+    width: 319px;
+    height: 139px;
+    margin: 68px auto 18px;
+    background: url(../img/home-time-text.png)no-repeat;
+}
+.home-time-num{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 100px;
+    color: #00beff;
+    font-weight: bold;
+}
+.home-time-num span{
+    letter-spacing: 1px
+}
+.home-media{
+    width: 560px;
+    height: 50px;
+    line-height: 50px;
+    background: rgba(0,0,0,0.4);
+    margin: 0 auto 88px;
+    color: #fff;
+    padding-left: 16px;
+    font-size: 14px;
+}
+.home-media a{
+    display: inline-block;
+    padding: 0 30px;
+}
+.home-media img{
+    vertical-align: middle;
+}
+.home-media i{
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #fff;
+}
+.home-nav{
+    display: flex;
+    width: 533px;
+    height: 42px;
+    background: url(../img/home-nav.png)no-repeat;
+    margin: 0 auto;
+}
+.home-nav a{
+    flex: 1;
+}
+.swiper{
+    height: 3761px;
+}
+.safety{
+    height: 932px;
+    padding-top: 33px;
+    background: url(../img/safety-bg.jpg)no-repeat;
+}
+.safety-text{
+    width: 225px;
+    height: 75px;
+    margin-left:308px;
+    margin-bottom: 34px;
+    background: url(../img/swiper-safety-text.png)no-repeat;
+    background-size: cover;
+}
+.swiper-safety,.swiper-interconnected,.swiper-space,.swiper-power{
+    position: relative;
+    width: 570px;
+    height: 650px;
+    overflow: hidden;
+}
+.interconnected{
+    height: 948px;
+    padding-top: 53px;
+    background: url(../img/interconnected-bg.jpg)no-repeat;
+}
+.interconnected-text{
+    width: 241px;
+    height: 75px;
+    margin: 0 0 170px 33px;
+    background: url(../img/swiper-interconnected-text.png)no-repeat;
+}
+.space{
+    height: 938px;
+    padding-top: 38px;
+    background: url(../img/space-bg.jpg)no-repeat;
+}
+.space-text{
+    width: 244px;
+    height: 75px;
+    margin: 0 0 35px 277px;
+    background: url(../img/swiper-space-text.png)no-repeat;
+}
+.power{
+    height: 943px;
+    padding-top: 43px;
+    background: url(../img/power-bg.jpg)no-repeat;
+}
+.power-text{
+    width: 221px;
+    height: 75px;
+    margin: 0 0 35px 101px;
+    background: url(../img/swiper-power-text.png)no-repeat;
+}
+.swiper-interconnected,.swiper-power{
+    margin-left: 71px;
+}
+.footer{
+    height: 1989px;
+    background: url(../img/footer-bg.jpg)no-repeat;
+}
+.parameter{
+    height: 956px;
+    padding-top: 87px;
+    padding: 87px 35px 0 35px;
+}
+.parameter-text{
+    width: 275px;
+    height: 74px;
+    background: url(../img/parameter-text.jpg)no-repeat;
+    margin: 0 0 45px 13px;
+}
+.parameter-select span{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    border: 1px solid #c4c4c4;
+    background:#fff url(../img/parameter-select-icon.jpg)no-repeat center center;
+}
+.parameter-select-but{
+    display: inline-block;
+    width: 510px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #c4c4c4;
+    border-left: none;
+    vertical-align: middle;
+    background: #fff;
+    padding: 0;
+    font-size: 24px;
+    color: #06a2d7;
+    padding-left: 22px;
+    background:#fff url(../img/city-select.png)no-repeat 459px center;
+}
+.parameter-select-list{
+    position: absolute;
+    width: 570px;
+    background: #fff;
+    font-size: 18px;
+    text-align: center;
+    display: none;
+}
+.parameter-select-list li{
+    color: #06a2d7;
+    line-height: 50px;
+}
+.parameter-canshu{
+    width: 570px;
+    height: 672px;
+    background: #fff;
+    margin-top: 20px;
+    overflow: auto;
+}
+.parameter-canshu table{
+    width: 100%;
+   
+}
+.parameter-canshu table tr{ border-bottom: 1px solid #efefef; }
+.parameter-canshu td{
+    height: 60px;
+    vertical-align:middle;
+}
+
+.parameter-canshu tr:nth-child(2),.canshu-bg{
+    width: 100%;
+    background: #e4e4e4;
+    font-size: 24px;
+    height: 80px;
+    line-height: 80px !important; 
+}
+.canshu-bg{
+    font-weight: bold;
+}
+.parameter-canshu th{
+    text-align: left;
+}
+.parameter-canshu td{
+    font-size: 22px;
+}
+.parameter-canshu tr td:nth-child(1){ padding-left: 10px; }
+.parameter-canshu tr td:nth-child(2),.parameter-canshu tr td:nth-child(3),.parameter-canshu tr td:nth-child(4),.parameter-canshu tr td:nth-child(5){
+    text-align: right;
+    padding-right: 15px;
+}
+.parameter-canshu tr td:nth-child(3),.parameter-canshu tr td:nth-child(4),.parameter-canshu tr td:nth-child(5){
+    display: none;
+}
+select{
+    appearance:none;  
+-moz-appearance:none;  
+-webkit-appearance:none;  
+}
+.reserve-header-text{
+    margin:69px 0 45px 121px;
+}
+.reserve-header-car{
+    position: absolute;
+    top: 100px;
+    left: 210px;
+}
+.reserve-input{
+    padding: 0 40px 0 40px;
+    font-size: 0;
+}
+.reserve-input-userlogo,.reserve-input-phonelogo,.reserve-input-provincelogo,.reserve-input-citylogo,.reserve-input-dealerlogo{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #c4c4c4;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+.reserve-input-username,.reserve-input-phone,.reserve-input-province,.reserve-input-city,.reserve-input-dealer{
+    width: 500px;
+    height: 60px;
+    line-height: 60px;
+    border:  1px solid #c4c4c4;
+    border-left: 0;
+    padding-left: 23px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    font-size: 24px;
+    background: #fff;
+    text-align: left;
+}
+.reserve-input-province,.reserve-input-city,.reserve-input-dealer{
+    background:#fff url(../img/city-select.png)no-repeat 459px center;
+}
+.reserve-input-userlogo{
+    background:#fff url(../img/user-logo.png)no-repeat center center;
+}
+.reserve-input-phonelogo{
+    background:#fff url(../img/phone-logo.png)no-repeat center center;
+}
+.reserve-input-provincelogo{
+    background:#fff url(../img/province-logo.png)no-repeat center center;
+}
+.reserve-input-citylogo{
+    background:#fff url(../img/city-logo.png)no-repeat center center;
+}
+.reserve-input-dealerlogo{
+    background:#fff url(../img/dealer-logo.png)no-repeat center center;
+}
+.reserve-input-note{
+    line-height: 30px;
+    margin-top: 4px;
+    margin-bottom: 38px;
+    text-align: center;
+    font-size: 24px;
+    color: #585858;
+}
+.reserve-input-sbumit,.reserve-input-reset{
+    display: inline-block;
+    text-align: center;
+    width: 270px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    color: #fff;
+    background: #06a2d7;
+    border: 0;
+}
+.reserve-input-reset{
+    background: #8d8d8d;
+    margin-left: 20px;
+}
